@@ -11,7 +11,7 @@
 
 I want to learn more about Elm, F#, Suave, websockets, and developing on .NET Core. So I decided to build a demo application with Elm on the front end, connecting to a Suave websocket server on the backend. I built this on .NET Core 2.
 
-# Create a basic .NET Core F# console project
+# Create a basic DotNet Core F# console project
 
 To get started let's first scaffold out a basic .NET Core F# console project. In this example I am using .NET Core 2.0 SDK. You can install this on Windows, macOS, and Linux. I have it installed on both my [WSL with Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and Windows 10.
 
@@ -30,8 +30,8 @@ Get the Elm websocket client [here](https://github.com/mandelbrotmesh/exosphere/
 First create a folder where you will keep your files. By default the name of the folder will be used to name your project files.
 
 ```bash
-mkdir websocket-server
-cd websocket-server
+mkdir websocket-log
+cd websocket-log
 ```
 
 Now you can run the dotnet new command. I highly recommand running `dotnet new` to checkout all of the options available.
@@ -270,6 +270,8 @@ In the text box enter something and click `Send`. You should get some text back.
 
 # What's next?
 
-Ok this is cute and all but I should probably try building something a bit more useful. I am thinking about a websocket client that displays a continuous log. Also I really need to find out what is going on with `websocketWithSubprotocol`.
+Ok this is cute and all but I should probably try building something a bit more useful. I am thinking about a websocket client that displays a continuous log. Also I really need to find out what is going on with `handshakewithsubprotocol`.
+
+Update: [I answered my own question on StackOverflow](https://stackoverflow.com/questions/47965104/the-value-or-constructor-handshakewithsubprotocol-is-not-defined-in-websocket/47965105#47965105). Looks like this function is not a part of v2.2.1, which is the latest stable release. 
 
 As always if you have any questions please tweet me.
