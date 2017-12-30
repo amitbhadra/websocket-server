@@ -37,7 +37,7 @@ cd websocket-log
 Now you can run the dotnet new command. I highly recommand running `dotnet new` to checkout all of the options available.
 
 ```bash
-dotnet new console --lang F#
+dotnet new console -lang F#
 ```
 
 This creates `Program.fs`, which is the entry point for the console app, and a `websocket-log.fsproj` which configures your project and helps the compiler do its thing.
